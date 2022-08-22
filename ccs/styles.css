@@ -50,7 +50,7 @@ nav ul li a{
 
         /*  main */
 main{
-    background-color: #FFCCD5;
+    background-image: linear-gradient(to bottom, #FFB3C1 ,#ffc3ce );
     flex-wrap: wrap;
  
    
@@ -61,7 +61,7 @@ main{
            /* footer */
 footer{
 
-    background-color: #FFB3C1;  
+    background-color: #ffc3ce;  
     color: #fff;
     display: flex;
     align-items: center;
@@ -125,20 +125,13 @@ footer a{
  /* grid area */
  
  #fotos{
-    width: 100%;
+    width: 50rem;
     
  }
 
- .galeriaM {
-    grid-area: galeriaM;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
   
 
- }
+ 
 .manos{
    
     grid-area: manos;
@@ -174,7 +167,7 @@ footer a{
  }
 
  .promoAgosto{
-    width: 100%;
+    width: 50rem;
  }
 
 
@@ -184,7 +177,7 @@ footer a{
    display: grid;
 } */
  .imagT{
-    width: 100%;
+    width: 50rem;
  }
 
 
