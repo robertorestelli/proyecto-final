@@ -1,0 +1,217 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+
+    font-family:'Roboto', sans-serif;
+    width: 100wh;
+    
+   
+}
+
+
+               /* header */
+header{
+    background-color: #FFB3C1;
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    color: #590D22;
+    margin-left: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #fff;
+
+}
+
+
+        /*  main */
+main{
+    background-color: #FFCCD5;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+           /* footer */
+footer{
+
+    background-color: #FFB3C1;  
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 30px 10px 30px;
+
+}
+
+footer a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+ 
+}
+
+
+.navHorizontal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+            /* GRID */
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "quien quien"
+                         "noticias ultimosT"
+                         "noticias ultimosT ";
+ }
+.mainManos{
+    
+    display: grid;
+    grid-template-columns: 1fr 500px ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:"manos manos "
+                        "galeriaM galeriaM"
+                        ;
+                      
+}
+
+.mainDepilacion{
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+   }
+
+
+/*   .galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "manos manos"
+                         "galeriaM galeriaM "
+                         "galeriaM galeriaM ";
+
+ } */
+
+ /* grid area */
+ 
+ #fotos{
+    width: 100%;
+    
+ }
+
+ .galeriaM {
+    grid-area: galeriaM;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  
+
+ }
+.manos{
+   
+    grid-area: manos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+ .quien{
+    
+    grid-area: quien;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .noticias{
+    grid-area: noticias;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+ .ultimosT{
+    grid-area: ultimosT;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+
+ .promoAgosto{
+    width: 100%;
+ }
+
+
+
+
+/* .grillaPromo{
+   display: grid;
+} */
+ .imagT{
+    width: 100%;
+ }
+
+
+
+
+        /* mediaqueries */
+
+ @media only screen and (max-width: 1024px) {
+     .mainIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "quien quien"
+                         "noticias noticias"
+                         "noticias noticias"
+                         "ultimosT ultimosT";
+ }
+
+ }
+
+ @media only screen and (max-width: 500px) {
+    .mainIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "quien quien"
+                         "noticias noticias  "
+                         "noticias noticias   "
+                         "ultimosT ultimosT";
+ }
+}
